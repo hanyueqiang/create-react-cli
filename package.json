@@ -1,6 +1,6 @@
 {
-  "name": "@ym/create-react-cli",
-  "version": "1.0.0",
+  "name": "ym-create-react-cli",
+  "version": "1.0.1",
   "description": "a simple scaffold for create react app",
   "main": "index.js",
   "bin": {
