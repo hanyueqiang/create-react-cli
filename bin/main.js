@@ -1,4 +1,4 @@
-#!/user/bin/env node
+#!/usr/bin/env node
 
 const commander = require("commander");
 const download = require("download-git-repo");
@@ -29,14 +29,14 @@ async function main() {
     const downloadOptions = { clone: true };
     await fs.emptyDir(destination);
     await downloadCode(repository, destination, downloadOptions);
-    changePackageName(projectName);
-    const command = "npm i";
-    await execFunc(command);
+    // changePackageName(projectName);
+    // const command = "npm i";
+    // await execFunc(command);
     spinner.succeed("succeed");
     const promptText = `
       ${chalk.blue(`cd ${projectName}`)}
       
-      start development from ${chalk.blue("npm start")} 
+      enter ${chalk.blue("yarn or npm i")}
     `;
     console.log(promptText);
   } catch (error) {
